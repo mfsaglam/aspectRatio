@@ -14,6 +14,8 @@
 		12198C0D28FC004D00F1ED90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12198C0C28FC004D00F1ED90 /* Assets.xcassets */; };
 		12198C1028FC004D00F1ED90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12198C0E28FC004D00F1ED90 /* LaunchScreen.storyboard */; };
 		12198C1828FC389D00F1ED90 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12198C1728FC389D00F1ED90 /* UIViewController+Ext.swift */; };
+		12198C1A28FC398300F1ED90 /* AspectRatioCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12198C1928FC398200F1ED90 /* AspectRatioCalculator.swift */; };
+		12198C1C28FC3C7700F1ED90 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12198C1B28FC3C7700F1ED90 /* String+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		12198C0F28FC004D00F1ED90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12198C1128FC004D00F1ED90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12198C1728FC389D00F1ED90 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		12198C1928FC398200F1ED90 /* AspectRatioCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectRatioCalculator.swift; sourceTree = "<group>"; };
+		12198C1B28FC3C7700F1ED90 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				12198C0328FC004D00F1ED90 /* AppDelegate.swift */,
 				12198C0528FC004D00F1ED90 /* SceneDelegate.swift */,
 				12198C0728FC004D00F1ED90 /* CalculateVC.swift */,
+				12198C1B28FC3C7700F1ED90 /* String+Ext.swift */,
+				12198C1928FC398200F1ED90 /* AspectRatioCalculator.swift */,
 				12198C1728FC389D00F1ED90 /* UIViewController+Ext.swift */,
 				12198C0928FC004D00F1ED90 /* Main.storyboard */,
 				12198C0C28FC004D00F1ED90 /* Assets.xcassets */,
@@ -141,8 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12198C1C28FC3C7700F1ED90 /* String+Ext.swift in Sources */,
 				12198C0828FC004D00F1ED90 /* CalculateVC.swift in Sources */,
 				12198C0428FC004D00F1ED90 /* AppDelegate.swift in Sources */,
+				12198C1A28FC398300F1ED90 /* AspectRatioCalculator.swift in Sources */,
 				12198C1828FC389D00F1ED90 /* UIViewController+Ext.swift in Sources */,
 				12198C0628FC004D00F1ED90 /* SceneDelegate.swift in Sources */,
 			);
