@@ -68,6 +68,7 @@ class CalculateVC: UIViewController {
         resetViews()
         widthTextField.font = UIFont.systemFont(ofSize: 25)
         heightTextField.font = UIFont.systemFont(ofSize: 25)
+        
     }
 }
 

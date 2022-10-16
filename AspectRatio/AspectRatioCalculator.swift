@@ -19,7 +19,8 @@ struct AspectRatioCalculator {
         guard width != nil && height != nil else { return nil }
         switch format {
         case .diagonal:
-            return "0"
+            let result = width! * width! + height! * height!
+            return "\(sqrt(result))"
         case .oneBased:
             return "0:1"
         case .widthAndHeightBased:
