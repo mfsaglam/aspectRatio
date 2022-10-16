@@ -22,6 +22,14 @@ class ViewController: UIViewController {
         hideKeyboardWhenTappedAround()
     }
     
+    @IBAction func widthChanged(_ sender: UITextField) {
+        print(sender.text)
+    }
+    
+    @IBAction func heightChanged(_ sender: UITextField) {
+        print(sender.text)
+    }
+    
     @IBAction func resetTapped(_ sender: UIButton) {
         resetViews()
     }

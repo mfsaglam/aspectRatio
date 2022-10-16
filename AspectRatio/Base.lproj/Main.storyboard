@@ -26,6 +26,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="continue"/>
+                                        <connections>
+                                            <action selector="widthChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="3nW-Ei-Mux"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="HEIGHT" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Zt-MY-N9M">
                                         <rect key="frame" x="190.66666666666663" y="2.6666666666666856" width="170.33333333333337" height="55"/>
@@ -34,6 +37,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="continue"/>
+                                        <connections>
+                                            <action selector="heightChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="vZ5-pS-SIc"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <constraints>
