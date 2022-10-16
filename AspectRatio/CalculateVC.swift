@@ -6,8 +6,17 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class CalculateVC: UIViewController {
+    
+    private let banner: GADBannerView = {
+        let banner = GADBannerView()
+        banner.adUnitID = "ca-app-pub-8442656527638773/2615423698"
+        banner.load(GADRequest())
+        banner.backgroundColor = .secondarySystemBackground
+        return banner
+    }()
     
     var width: Float = 1
     var height: Float = 1
@@ -25,6 +34,11 @@ class CalculateVC: UIViewController {
         super.viewDidLoad()
         configureUI()
         hideKeyboardWhenTappedAround()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        banner.frame = CGRect(x: 0, y: 50, width: view.frame.size.width, height: 50).integral
     }
     
     @IBAction func widthChanged(_ sender: UITextField) {
@@ -72,6 +86,9 @@ class CalculateVC: UIViewController {
         resetViews()
         widthTextField.font = UIFont.systemFont(ofSize: 25)
         heightTextField.font = UIFont.systemFont(ofSize: 25)
+        
+        banner.rootViewController = self
+        view.addSubview(banner)
     }
 }
 
