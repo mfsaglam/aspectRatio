@@ -96,6 +96,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Reset"/>
+                                        <connections>
+                                            <action selector="resetTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IZS-Bg-l0Z"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msv-qB-EXA">
                                         <rect key="frame" x="188.66666666666663" y="0.0" width="172.33333333333337" height="44"/>
@@ -104,6 +107,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Remove Ads"/>
+                                        <connections>
+                                            <action selector="removeAdsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tAf-RC-a5T"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

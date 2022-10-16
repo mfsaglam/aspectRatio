@@ -22,11 +22,26 @@ class ViewController: UIViewController {
         hideKeyboardWhenTappedAround()
     }
     
-    private func configureUI() {
-        
+    @IBAction func resetTapped(_ sender: UIButton) {
+        resetViews()
     }
-
-
+    
+    @IBAction func removeAdsTapped(_ sender: Any) {
+        //start iap process
+    }
+    
+    private func resetViews() {
+        widthTextField.text = ""
+        heightTextField.text = ""
+        
+        diagonalLabel.text = "0"
+        xLabel.text = "x:1"
+        whLabel.text = "w:h"
+    }
+    
+    private func configureUI() {
+        resetViews()
+    }
 }
 
 extension UIViewController {
