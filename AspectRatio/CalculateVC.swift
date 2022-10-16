@@ -46,12 +46,9 @@ class CalculateVC: UIViewController {
     }
     
     private func calculateAndUpdateUI() {
-       
-            diagonalLabel.text = (calculator.calculate(width: width, height: height, format: .diagonal))
-            xLabel.text = (calculator.calculate(width: width, height: height, format: .oneBased))
-            whLabel.text = (calculator.calculate(width: width, height: height, format: .widthAndHeightBased))
-        
-        
+        diagonalLabel.text = (calculator.calculate(width: width, height: height, format: .diagonal))
+        xLabel.text = (calculator.calculate(width: width, height: height, format: .oneBased))
+        whLabel.text = (calculator.calculate(width: width, height: height, format: .widthAndHeightBased))
     }
     
     @IBAction func resetTapped(_ sender: UIButton) {
