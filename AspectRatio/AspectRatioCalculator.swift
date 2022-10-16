@@ -15,21 +15,20 @@ enum RatioFormat {
 
 struct AspectRatioCalculator {
     
-    func calculate(width: Float?, height: Float?, format: RatioFormat) -> String? {
-        guard width != nil && height != nil else { return nil }
+    func calculate(width: Float, height: Float, format: RatioFormat) -> String {
         switch format {
             
         case .diagonal:
-            let result = width! * width! + height! * height!
+            let result = width * width + height * height
             return String(format: "%.2f", sqrt(result))
             
         case .oneBased:
-            let result = width! / height!
+            let result = width / height
             return String(format: "%.2f", result) + ":1"
             
         case .widthAndHeightBased:
-            let gcd = gcd(width!, height!)
-            return String(format: "%.0f", width! / gcd) + ":" + String(format: "%.0f", height! / gcd)
+            let gcd = gcd(width, height)
+            return String(format: "%.0f", width / gcd) + ":" + String(format: "%.0f", height / gcd)
         }
     }
     

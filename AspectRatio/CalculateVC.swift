@@ -28,23 +28,30 @@ class CalculateVC: UIViewController {
     }
     
     @IBAction func widthChanged(_ sender: UITextField) {
-        if let width = sender.text {
-            self.width = width.floatValue
-            calculateAndUpdateUI()
+        if let widthString = sender.text {
+            if widthString.count > 0 {
+                self.width = widthString.floatValue
+                calculateAndUpdateUI()
+            }
         }
     }
     
     @IBAction func heightChanged(_ sender: UITextField) {
-        if let height = sender.text {
-            self.height = height.floatValue
-            calculateAndUpdateUI()
+        if let heightString = sender.text {
+            if heightString.count > 0 {
+                self.height = heightString.floatValue
+                calculateAndUpdateUI()
+            }
         }
     }
     
     private func calculateAndUpdateUI() {
-        diagonalLabel.text = (calculator.calculate(width: self.width, height: self.height, format: .diagonal))
-        xLabel.text = (calculator.calculate(width: self.width, height: self.height, format: .oneBased))
-        whLabel.text = (calculator.calculate(width: self.width, height: self.height, format: .widthAndHeightBased))
+       
+            diagonalLabel.text = (calculator.calculate(width: width, height: height, format: .diagonal))
+            xLabel.text = (calculator.calculate(width: width, height: height, format: .oneBased))
+            whLabel.text = (calculator.calculate(width: width, height: height, format: .widthAndHeightBased))
+        
+        
     }
     
     @IBAction func resetTapped(_ sender: UIButton) {
@@ -59,9 +66,9 @@ class CalculateVC: UIViewController {
         widthTextField.text = ""
         heightTextField.text = ""
         
-        diagonalLabel.text = "0"
-        xLabel.text = "0:1"
-        whLabel.text = "0:0"
+        diagonalLabel.text = "1"
+        xLabel.text = "1:1"
+        whLabel.text = "1:1"
     }
     
     private func configureUI() {
