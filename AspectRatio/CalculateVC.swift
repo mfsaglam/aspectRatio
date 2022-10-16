@@ -9,8 +9,8 @@ import UIKit
 
 class CalculateVC: UIViewController {
     
-    var width: Float?
-    var height: Float?
+    var width: Float = 1
+    var height: Float = 1
     
     var calculator = AspectRatioCalculator()
     
