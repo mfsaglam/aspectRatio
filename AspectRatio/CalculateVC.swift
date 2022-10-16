@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CalculateVC: UIViewController {
     
     @IBOutlet weak var widthTextField: UITextField!
     @IBOutlet weak var heightTextField: UITextField!
@@ -23,11 +23,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func widthChanged(_ sender: UITextField) {
-        print(sender.text)
+        if let width = sender.text {
+            print(width)
+        }
     }
     
     @IBAction func heightChanged(_ sender: UITextField) {
-        print(sender.text)
+        if let height = sender.text {
+            print(height)
+        }
     }
     
     @IBAction func resetTapped(_ sender: UIButton) {
@@ -49,18 +53,6 @@ class ViewController: UIViewController {
     
     private func configureUI() {
         resetViews()
-    }
-}
-
-extension UIViewController {
-    func hideKeyboardWhenTappedAround() {
-        let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
-        tap.cancelsTouchesInView = false
-        view.addGestureRecognizer(tap)
-    }
-    
-    @objc func dismissKeyboard() {
-        view.endEditing(true)
     }
 }
 
