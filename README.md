@@ -1,7 +1,7 @@
 
 # Aspect Ratio
 
-A simple app that calculates the 3 different aspect ratio formats with given width and height.
+A simple iOS app that calculates the 3 different aspect ratio formats with given width and height.
 
 
 ## Screenshots
