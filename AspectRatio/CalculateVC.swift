@@ -38,7 +38,6 @@ class CalculateVC: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        banner.frame = CGRect(x: 0, y: 50, width: view.frame.size.width, height: 50).integral
     }
     
     @IBAction func widthChanged(_ sender: UITextField) {
@@ -70,7 +69,10 @@ class CalculateVC: UIViewController {
     }
     
     @IBAction func removeAdsTapped(_ sender: Any) {
-        //start iap process
+        //TODO: start iap process
+        let alert = UIAlertController(title: "Not ready", message: "This feature will be available soon.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alert, animated: true)
     }
     
     private func resetViews() {
@@ -89,6 +91,14 @@ class CalculateVC: UIViewController {
         
         banner.rootViewController = self
         view.addSubview(banner)
+        banner.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            banner.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            banner.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            banner.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            banner.heightAnchor.constraint(equalToConstant: 50)
+        ])
     }
 }
 
