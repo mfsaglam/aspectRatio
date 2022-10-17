@@ -10,13 +10,7 @@ import GoogleMobileAds
 
 class CalculateVC: UIViewController {
     
-    private let banner: GADBannerView = {
-        let banner = GADBannerView()
-        banner.adUnitID = "ca-app-pub-8442656527638773/2615423698"
-        banner.load(GADRequest())
-        banner.backgroundColor = .secondarySystemBackground
-        return banner
-    }()
+    private let banner = GADBannerView()
     
     var width: Float = 1
     var height: Float = 1
@@ -33,6 +27,7 @@ class CalculateVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        configureBanner()
         hideKeyboardWhenTappedAround()
     }
     
@@ -88,9 +83,16 @@ class CalculateVC: UIViewController {
         resetViews()
         widthTextField.font = UIFont.systemFont(ofSize: 25)
         heightTextField.font = UIFont.systemFont(ofSize: 25)
-        
+    }
+    
+    private func configureBanner() {
+//        banner.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        banner.adUnitID = "ca-app-pub-8442656527638773/2615423698"
+        banner.load(GADRequest())
+        banner.backgroundColor = .secondarySystemBackground
         banner.rootViewController = self
         view.addSubview(banner)
+        banner.delegate = self
         banner.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
@@ -99,6 +101,16 @@ class CalculateVC: UIViewController {
             banner.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
             banner.heightAnchor.constraint(equalToConstant: 50)
         ])
+    }
+}
+
+extension CalculateVC: GADBannerViewDelegate {
+    func bannerViewDidReceiveAd(_ bannerView: GADBannerView) {
+        print("ad received")
+    }
+    
+    func bannerView(_ bannerView: GADBannerView, didFailToReceiveAdWithError error: Error) {
+        print(error)
     }
 }
 
