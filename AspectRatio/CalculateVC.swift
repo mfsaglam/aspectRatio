@@ -86,7 +86,9 @@ class CalculateVC: UIViewController {
     }
     
     private func configureBanner() {
+        //test id
 //        banner.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        //my id
         banner.adUnitID = "ca-app-pub-8442656527638773/2615423698"
         banner.load(GADRequest())
         banner.backgroundColor = .secondarySystemBackground
@@ -98,7 +100,7 @@ class CalculateVC: UIViewController {
         NSLayoutConstraint.activate([
             banner.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             banner.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            banner.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            banner.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             banner.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
