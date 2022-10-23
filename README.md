@@ -6,7 +6,7 @@ A simple iOS app that calculates the 3 different aspect ratio formats with given
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/mfsaglam/aspectRatio/blob/main/screenshots/ss.png)
 
 
 ## Demo
