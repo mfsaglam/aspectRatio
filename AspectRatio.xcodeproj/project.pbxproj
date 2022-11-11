@@ -18,6 +18,7 @@
 		12198C1A28FC398300F1ED90 /* AspectRatioCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12198C1928FC398200F1ED90 /* AspectRatioCalculator.swift */; };
 		12198C1C28FC3C7700F1ED90 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12198C1B28FC3C7700F1ED90 /* String+Ext.swift */; };
 		12D4832A291EDE1D00E484D1 /* AspectRatioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D48329291EDE1D00E484D1 /* AspectRatioTests.swift */; };
+		12D48331291EDE9800E484D1 /* AspectRatioCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D48330291EDE9800E484D1 /* AspectRatioCalculatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		12198C1B28FC3C7700F1ED90 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		12D48327291EDE1D00E484D1 /* AspectRatioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AspectRatioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12D48329291EDE1D00E484D1 /* AspectRatioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectRatioTests.swift; sourceTree = "<group>"; };
+		12D48330291EDE9800E484D1 /* AspectRatioCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectRatioCalculatorTests.swift; sourceTree = "<group>"; };
 		9858414A88FCF14D1FAA2221 /* Pods_AspectRatio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AspectRatio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				12D48329291EDE1D00E484D1 /* AspectRatioTests.swift */,
+				12D48330291EDE9800E484D1 /* AspectRatioCalculatorTests.swift */,
 			);
 			path = AspectRatioTests;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12D48331291EDE9800E484D1 /* AspectRatioCalculatorTests.swift in Sources */,
 				12D4832A291EDE1D00E484D1 /* AspectRatioTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
