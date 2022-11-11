@@ -18,7 +18,7 @@ final class AspectRatioCalculatorTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
-    func test1920by1080is16by9() {
+    func test_Calculate_1920by1080is16by9() {
         let sut = AspectRatioCalculator()
         
         let result = sut.calculate(width: 1920, height: 1080, format: .widthAndHeightBased)
